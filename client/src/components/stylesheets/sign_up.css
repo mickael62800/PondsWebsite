@@ -1,0 +1,10 @@
+.container-user h2 {
+  background-color: rgb(31, 102, 0);
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.form-action {
+  margin-top: 20px;
+}

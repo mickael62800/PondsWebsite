@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<div>
+  <form class="container-user">
+    <h2>Connexion au site</h2>
+    <p>Adresse email</p>
+
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-envelope-open"></i>
+      </div>
+      <input type="text" id="mail" name="mail" required class="container-textbox-text" v-model="mail">
+    </div>
+
+    <p>Mot de passe</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-unlock-alt"></i>
+      </div>
+      <input type="password" id="password" name="password" required class="container-textbox-text" v-model="password">
+    </div>
+
+    <div class="form-action">
+      <button type="submit" class="button button-navigation">Créer un compte</button>
+      <router-link to="/" class="button button-navigation">Retour à l'accueil</router-link>
+    </div>
+  </form>
+</div>

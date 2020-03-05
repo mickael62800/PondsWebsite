@@ -1,0 +1,40 @@
+.container-radiobox {
+  display: flex;
+  width: auto;
+  height: 40px;
+  border: solid 2px rgb(31, 102, 0);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(240, 240, 240);
+}
+
+.container-radiobox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(31, 102, 0);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 50px;
+  height: auto;
+}
+
+.user_gender,
+.pond_Handicap_access,
+.pond_barbecue_available,
+.pond_snack,
+.pond_night_fishing,
+.pond_federal_card,
+.pond_tickets_days_hafdays,
+.pond_fishing_batteries {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(31, 102, 0);
+  font-size: 20px;
+  width: 100%;
+}
+
+.radio_buttons {
+  margin-right: 10px;
+}

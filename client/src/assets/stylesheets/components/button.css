@@ -1,0 +1,35 @@
+.button {
+  color: rgb(255, 255, 255);
+  border: solid 2px ;
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-decoration: none;
+  line-height: 2;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.button-devise {
+  background-color: rgb(108, 183, 222);
+  border-color: rgb(108, 183, 222);
+}
+
+.button-devise:hover {
+  background-color: rgb(183, 226, 242);
+}
+
+
+.button-navigation {
+  background-color: rgb(31, 102, 0);
+  border-color: rgb(31, 102, 0);
+}
+
+.button-navigation:hover {
+  background-color: rgb(50, 168, 0);
+}
+
+.button i {
+  margin: 0 20px;
+}

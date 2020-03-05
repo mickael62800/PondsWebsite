@@ -1,0 +1,27 @@
+.container-user {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.container-home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-actions {
+  margin-top: 10px;
+}
+
+.container-new-pond {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-registration {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-registration h3 {
+  margin-top: 10px;
+}

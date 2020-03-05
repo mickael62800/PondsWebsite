@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<div class="container-user">
+  <h2>1 - Vos informations de connexion</h2>
+  <h4>Ce sont les informations qui vous permettrons de vous connecter.</h4>
+
+  <form action="/">
+
+    <p>Adresse email</p>
+
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-envelope-open"></i>
+      </div>
+      <input type="text" id="mail" name="mail" required class="container-textbox-text" v-model="mail">
+    </div>
+
+    <p>Pseudonyme</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fab fa-napster"></i>
+      </div>
+      <input type="text" id="pseudonyme" name="pseudonyme" required class="container-textbox-text" v-model="pseudonyme">
+    </div>
+
+    <p>Mot de passe</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-unlock-alt"></i>
+      </div>
+      <input type="password" id="password" name="password" required class="container-textbox-text" v-model="password">
+    </div>
+
+    <p>Mot de passe répété</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-unlock-alt"></i>
+      </div>
+      <input type="password" id="repeatpassword" name="repeatpassword" required class="container-textbox-text" v-model="repeatpassword">
+    </div>
+
+    <p>Avatar / photo</p>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+    <h2>2 - Vos informations personnelles</h2>
+
+    <p>Civilité</p>
+    <div class="container-radiobox">
+      <div class="container-radiobox-icon">
+        <i class="fas fa-genderless"></i>
+      </div>
+      <div class="user_gender">
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+        <input type="radio" id="autre" name="genre" value="autre">
+        <label for="autre">Autre</label>
+      </div>
+    </div>
+
+    <p>Nom de famille</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-users"></i>
+      </div>
+      <input type="text" id="lastname" name="lastname" required class="container-textbox-text" v-model="lastname">
+    </div>
+
+    <p>Prénom</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <input type="text" id="firstname" name="firstname" required class="container-textbox-text" v-model="firstname">
+    </div>
+
+    <p>Date de naissance</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-user"></i>
+      </div>
+      <input type="text" id="birthday" name="birthday" placeholder="JJ/MM/AAAA" required class="container-textbox-text" v-model="birthday">
+    </div>
+
+    <p>Adresse</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-address-card"></i>
+      </div>
+      <input type="text" id="address" name="address" required class="container-textbox-text" v-model="address">
+    </div>
+
+    <p>Complément d'adresse</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="far fa-address-card"></i>
+      </div>
+      <input type="text" id="complementaddress" name="complementaddress" required class="container-textbox-text" v-model="complementaddress">
+    </div>
+
+    <p>Code postale</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fab fa-usps"></i>
+      </div>
+      <input type="text" id="zipcode" name="zipcode" required class="container-textbox-text" v-model="zipcode">
+    </div>
+
+    <p>Ville / Commune</p>
+    <div class="container-textbox">
+      <div class="container-textbox-icon">
+        <i class="fas fa-city"></i>
+      </div>
+      <input type="text" id="city" name="city" required class="container-textbox-text" v-model="city">
+    </div>
+
+    <h2>3 - La pêche et vous</h2>
+
+    <p>Décrivez votre parcours</p>
+    <div class="container-description">
+      <div class="container-description-icon">
+        <i class="fas fa-comment-alt"></i>
+      </div>
+      <textarea id="story" name="story" rows="5" cols="75" class="container-textbox-description" v-model="story" ></textarea>
+    </div>
+
+    <div class="form-action">
+      <button type="submit" class="button button-navigation">Créer un compte</button>
+      <router-link to="/" class="button button-navigation">Retour à l'accueil</router-link>
+    </div>
+  </form>
+</div>
